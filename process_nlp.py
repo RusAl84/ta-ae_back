@@ -1,8 +1,8 @@
 ﻿import string
 from nltk.corpus import stopwords
-import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.feature_extraction.text import CountVectorizer
+# import pandas as pd
+# from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.feature_extraction.text import CountVectorizer
 import pymorphy2
 import json
 # from gensim.summarization import summarize

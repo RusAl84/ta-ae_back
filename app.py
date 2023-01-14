@@ -88,24 +88,6 @@ def load_db():
     return data
 
 
-# @app.route('/uploadsa', methods=['POST'])
-# def uploadsa():
-#     if request.method == 'POST':
-#         f = request.files['File']
-#         # filename = secure_filename(f.filename)
-#         milliseconds = int(time.time() * 1000)
-#         filename = f"./uploads/{milliseconds}.pcap"
-#         f.save(filename)
-#         # text = conv.convertJsonMessages2text(filename)
-#         # str1 = text
-#         from scan_detector import all_check
-#         str1 = all_check(filename)
-#         print(str1)
-#         str1 += "<br> <a href=""javascript:history.back()"">Назад</a>"
-#         return str1
-
-
-
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port="5000")
 # app.run(host="0.0.0.0")

@@ -280,11 +280,10 @@ def Rake_Summarizer(ttext):
     # !pip install nlp-rake
     # !pip install nltk
     from nlp_rake import Rake
-    # import nltk
-    # from nltk.corpus import stopwords
-    # nltk.download ("stopwords")
+    import nltk
+    from nltk.corpus import stopwords
+    nltk.download ("stopwords")
     stops = list(set(stopwords.words("russian")))
-
     rake = Rake(stopwords=stops, max_words=3)
     return rake.apply(ttext)[:1][0][0]
 
